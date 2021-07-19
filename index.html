@@ -27,9 +27,12 @@
         <div class="row align-items-center">
 
             <div class="col">
-                <img id="gif" src="/img/mis.gif" alt="gawra">
+                <img id="gif" src="img/mis.gif" alt="gawra">
 
                 <button id="oro" onclick="oro()">Ubij gawre !</button>
+
+                <button id="ref" onclick="miesko()" style="visibility: hidden;">Dorzuć Mięso </button>
+
             </div>
 
         </div>
@@ -38,11 +41,23 @@
     <script>
         function oro() {
 
-            document.getElementById("gif").src = '/img/zmij.jpg';
+            document.getElementById("gif").src = 'img/zmij.jpg';
 
             document.getElementById("txt").innerHTML = "Epik Żmij został zdobyty!";
 
             document.getElementById("txt").style.color = "yellow";
+
+            document.getElementById("ref").style.visibility = "visible";
+
+            document.getElementById("oro").style.visibility = "hidden";
+
+        }
+
+
+        function miesko() {
+
+            window.location.reload();
+            document.getElementById("ref").style.visibility = "hidden";
 
         }
     </script>
