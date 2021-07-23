@@ -107,3 +107,36 @@ function up3() {
     }
 
 }
+
+function up4() {
+
+    var reqZmij = 1000000;
+
+    if (reqZmij <= zmij) {
+
+        CPS = CPS + 734743347
+
+
+
+
+        document.getElementById("cps").innerHTML = CPS;
+
+
+        if (CPS > 0) {
+
+            setInterval(function() {
+                zmij = (zmij + CPS);
+                document.getElementById("count").innerHTML = zmij;
+            }, 1000);
+
+        }
+
+        alert("Gratulacje, dostałeś osiągniecie kozak torgero farmer!")
+
+    } else {
+
+        alert("Masz za mało żmijów!");
+
+    }
+
+}
