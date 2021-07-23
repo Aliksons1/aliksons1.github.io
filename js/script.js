@@ -110,7 +110,7 @@ function up3() {
 
 function up4() {
 
-    var reqZmij = 1000000;
+    var reqZmij = 100000000;
 
     if (reqZmij <= zmij) {
 
